@@ -15,8 +15,4 @@ module.exports = {
       template: "./index.html",
     }),
   ],
-  resolve: {
-    extensions: [".ts", ".js"],
-    modules: ["src", "node_modules"],
-  },
 };
