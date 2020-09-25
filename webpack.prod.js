@@ -8,7 +8,6 @@ module.exports = {
     app: "./src/App.js",
   },
   plugins: [
-    // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./index.html",
@@ -21,13 +20,5 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
     modules: ["src", "node_modules"],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.ts/,
-        use: "ts-loader",
-      },
-    ],
   },
 };

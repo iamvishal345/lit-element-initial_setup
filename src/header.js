@@ -6,7 +6,9 @@ class Header extends LitElement {
   }
 
   render() {
-    return html` <div>This is a header in shadow dom</div>`;
+    return html` <div>
+      <h1>This is a header in shadow dom</h1>
+    </div>`;
   }
 
   static get properties() {
